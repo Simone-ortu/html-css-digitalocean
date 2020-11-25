@@ -1,0 +1,15 @@
+.cont_100{
+  width: 100vw;
+}
+
+.debug .row [class*="col-xs-"]{
+  height: 150px;
+  border: 2px solid black ;
+  background-color: rgb(230, 143, 104);
+}
+
+.debug .row .row [class*="col-xs-"]{
+  height: 150px;
+  border: 2px solid black ;
+  background-color: rgb(103, 230, 116);
+}
