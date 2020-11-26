@@ -13,3 +13,43 @@
   border: 2px solid black ;
   background-color: rgb(103, 230, 116);
 }
+
+a{
+  text-decoration: none;
+  color: #031B4E
+}
+
+/* header */
+.lg_100px{
+  width: 150px;
+}
+.h_50px{
+  height: 50px;
+}
+.f_nav,
+.s_nav{
+  line-height: 50px;
+}
+.pos_a{
+  position: absolute;
+}
+.pos_r{
+  position: relative;
+}
+.lg_m{
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.br_blue{
+  font-size: 20px;
+  color: #0F71FF;
+  padding-top: 15px;
+}
+ul li a{
+  padding-left: 10px;
+}
+.btn_blue{
+  border: 1px solid #0F71FF;
+  color: #0F71FF;
+}
