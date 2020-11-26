@@ -16,26 +16,143 @@
 
 a{
   text-decoration: none;
-  color: #031B4E
+  color: #031B4E;
 }
 
-/* header */
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* margin */
+.m_auto{
+  margin: 0 auto;
+}
+.mt_10{
+  margin-top: 10px;
+}
+.mt_75{
+  margin-top: 75px;
+}
+
+.mb_50px{
+  margin-bottom: 50px;
+}
+
+/* padding */
+.p_10px{
+  padding: 10px;
+}
+.pt_10px{
+  padding-top: 10px;
+}
+.pb_50px{
+  padding-bottom:  50px;
+}
+.pt_50px{
+  padding-top: 50px;
+}
+
+
+/* position */
+.pos_a{
+  position: absolute;
+}
+
+.pos_r{
+  position: relative;
+}
+
+
+/* display */
+.d_block{
+  display: block;
+}
+
+/* button */
+.btn_blue{
+  border: 1px solid #0F71FF;
+  color: #0F71FF;
+}
+
+.btn_blue:hover,
+.btn_blue:focus,
+.btn_blue:active{
+  background-color: #0F71FF;
+  color: white;
+  border: 1px solid white;
+}
+
+.btn_account{
+  background-color: #0F71FF;
+  opacity: 0.4;
+  border: 1px solid #0F71FF;
+  color: white;
+}
+.btn_account:hover,
+.btn_account:active,
+.btn_account:focus{
+  background-color: #0F71FF;
+  border: 1px solid #0F71FF;
+  opacity: 1;
+  color: white;
+  transition: opacity 0.5s;
+}
+
+
+/* bg-color */
+.bgc_w{
+  background-color: white;
+  border-bottom: 1px solid rgba(164, 164, 164, 0.45);
+}
+
+.bgc_white{
+  background-color: white;
+}
+
+
+/* text properties */
+.fw_600{
+  font-weight: 600;
+}
+
+.t_darkblue{
+  color: #031B4E;
+}
+
+.t_blue{
+  color:#0F71FF;
+}
+
+.f_size14{
+  font-size: 14px;
+}
+
+.t_deco_u{
+  text-decoration: underline;
+}
+
+
+/* width */
 .lg_100px{
   width: 150px;
 }
+.w_100{
+  width: 100%;
+}
+
+/* height */
 .h_50px{
   height: 50px;
 }
+
 .f_nav,
 .s_nav{
   line-height: 50px;
 }
-.pos_a{
-  position: absolute;
-}
-.pos_r{
-  position: relative;
-}
+
+
+/* header */
+
 .lg_m{
   top: 50%;
   left: 0%;
@@ -49,35 +166,10 @@ a{
 ul li a{
   padding-left: 10px;
 }
-.btn_blue{
-  border: 1px solid #0F71FF;
-  color: #0F71FF;
-}
-.btn_blue:hover,
-.btn_blue:focus,
-.btn_blue:active{
-  background-color: #0F71FF;
-  color: white;
-  border: 1px solid white;
-}
-.bgc_w{
-  background-color: white;
-  border-bottom: 1px solid rgba(164, 164, 164, 0.45);
-}
-.mt_75{
-  margin-top: 75px;
-}
-.m_auto{
-  margin: 0 auto;
-}
-.p_fix{
-  position: fixed;
-  z-index: 1;
-  transform: translateX(-1.25%);
-}
-.w_100{
-  width: 61.5%;
-}
+
+
+/* jumbotron */
+
 .jumbotron{
   background-image: url('../img/bg-home-1.jpg');
   width: 100vw;
@@ -88,4 +180,66 @@ ul li a{
 .jumbotron h1,p{
   color: white;
   font-weight: 600;
+}
+.jumbotron .google_signup::before{
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url('../img/google-icon.png');
+  background-size: cover;
+}
+.jumbotron .box_login{
+  border-radius: 5px;
+}
+.jumbotron{
+  margin-bottom: 0;
+}
+/* partners */
+#partners{
+ font-family: 'Roboto', sans-serif;
+}
+#partners h4{
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 75px;
+  height: 75px;
+}
+#docker{
+  background-image: url('../img/logo_docker.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+
+}
+#gitlab{
+  background-image: url('../img/logo_gitlab.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+}
+#slack{
+  background-image: url('../img/logo_slack.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+}
+#hashi{
+  background-image: url('../img/logo_hashicorp.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+}
+#splunk{
+  background-image: url('../img/logo_splunk.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
 }
